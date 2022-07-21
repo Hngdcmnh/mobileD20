@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TrainingMobileD20</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
 </resources>
