@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/mobileD20/app/src/main/res/drawable/bg_searchbar.xml" value="0.1435" />
+        <entry key="..\:/mobileD20/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1435" />
+        <entry key="..\:/mobileD20/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/mobileD20/app/src/main/res/menu/main_menu.xml" value="0.259375" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
