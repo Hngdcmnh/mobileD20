@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sanka/AndroidStudioProjects/mobileD20/app/src/main/res/drawable/custom_background_ripple_for_button.xml" value="0.23" />
+        <entry key="..\:/Users/sanka/AndroidStudioProjects/mobileD20/app/src/main/res/drawable/custome_button.xml" value="0.23" />
+        <entry key="..\:/Users/sanka/AndroidStudioProjects/mobileD20/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.23" />
+        <entry key="..\:/Users/sanka/AndroidStudioProjects/mobileD20/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/sanka/AndroidStudioProjects/mobileD20/app/src/main/res/layout/item.xml" value="0.4" />
+        <entry key="..\:/Users/sanka/AndroidStudioProjects/mobileD20/app/src/main/res/menu/menu_bot_nav.xml" value="0.21927083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

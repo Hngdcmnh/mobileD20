@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/veDaXuatFragment">
+
+    <fragment
+        android:id="@+id/xuatVeFragment"
+        android:name="com.example.searchbar.fragment.XuatVeFragment"
+        android:label="Xuất vé"
+        tools:layout="@layout/fragment_xuat_ve">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/quetVeFragment"
+        android:name="com.example.searchbar.fragment.QuetVeFragment"
+        android:label="Quét QR"
+        tools:layout="@layout/fragment_quet_ve" />
+    <fragment
+        android:id="@+id/khacFragment"
+        android:name="com.example.searchbar.fragment.KhacFragment"
+        android:label="Khác"
+        tools:layout="@layout/fragment_khac" />
+    <fragment
+        android:id="@+id/veDaXuatFragment"
+        android:name="com.example.searchbar.fragment.VeDaXuatFragment"
+        android:label="Vé Đã Xuất"
+        tools:layout="@layout/fragment_ve_da_xuat" />
+</navigation>
