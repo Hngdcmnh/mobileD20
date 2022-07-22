@@ -14,22 +14,37 @@
         android:background="@color/purple_700"
         android:paddingLeft="5dp"
         android:paddingBottom="5dp">
-        <TextView
+        <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vé đã xuất"
-            android:textColor="@color/white"
-            android:textSize="24dp"
-            android:textStyle="bold"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/theTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vé đã xuất"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/textSearch"
+                android:layout_width="235dp"
+                android:layout_height="32dp"
+                android:hint="Điền cái gì đó"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/backgroundtext"/>
+        </FrameLayout>
+
 
         <ImageView
+            android:id="@+id/theSearch"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/ic_search_fill0_wght400_grad0_opsz48"
             android:scaleX="0.8"
             android:scaleY="0.8"
             android:scaleType="center"
-            android:layout_marginLeft="145dp"/>
+            android:onClick="search"
+            android:layout_marginLeft="15dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
