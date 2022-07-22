@@ -12,5 +12,4 @@
         android:id="@+id/filter"
         android:icon="@drawable/ic_baseline_filter_alt_24"
         app:showAsAction="ifRoom|collapseActionView" />
-
 </menu>
