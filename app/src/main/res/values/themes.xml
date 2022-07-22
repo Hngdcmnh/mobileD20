@@ -12,4 +12,7 @@
         <!-- Status bar color. -->
         <!-- Customize your theme here. -->
     </style>
+    <style name="SearchBarCustom" parent="Widget.AppCompat.SearchView">
+        <item name="android:queryHint">@string/search_hint</item>
+    </style>
 </resources>

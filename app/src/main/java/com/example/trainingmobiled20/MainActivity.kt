@@ -20,13 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         // Associate searchable configuration with the SearchView
         val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
-        val searchView : SearchView? = menu?.let {
-            menu.findItem(R.id.search_button).actionView as SearchView
-        }
+        val searchView = menu?.findItem(R.id.search_button)?.actionView as? SearchView
         searchView?.setSearchableInfo(searchManager.getSearchableInfo(componentName))
 
         searchView?.apply {
-            background = AppCompatResources.getDrawable(applicationContext, R.drawable.shape_bg_search)
             queryHint = getString(R.string.search_hint)
         }
 
