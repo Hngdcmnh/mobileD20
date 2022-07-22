@@ -2,9 +2,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:cardCornerRadius="12dp"
-    android:outlineSpotShadowColor="@color/purple_700">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="6dp"
+    android:elevation="10dp"
+    app:cardBackgroundColor="#e1f5fe"
+    app:cardCornerRadius="12dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="12dp">
 
             <TextView
                 android:id="@+id/tv_start_point"
@@ -50,7 +54,7 @@
                 app:layout_constraintTop_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-        
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,14 +97,17 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
 
-            <Button
+            <TextView
                 android:id="@+id/btn_note"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="12dp"
                 android:background="@drawable/custome_button"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
                 android:text="Ghi chú"
                 android:textColor="#ff9800"
                 android:textSize="14sp"
@@ -108,10 +115,10 @@
                 app:layout_constraintTop_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <TextView
                 android:id="@+id/btn_wait_CQT"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="12dp"
                 android:background="@drawable/custome_button"
                 android:paddingLeft="6dp"
