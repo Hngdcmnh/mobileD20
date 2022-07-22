@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater= menuInflater
-        inflater.inflate(R.menu.menu,menu)
+        inflater.inflate(R.menu.menu_item,menu)
         val manager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
-        val searchItem= menu?.findItem(R.id.search)
+        val searchItem= menu?.findItem(R.id.search_action)
         val searchView= searchItem?.actionView as SearchView
 
         searchView.apply{
