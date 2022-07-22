@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/mobileD20/app/src/main/res/drawable/ic_filter_alt_fill0_wght400_grad0_opsz48.xml" value="0.1705" />
         <entry key="..\:/mobileD20/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/mobileD20/app/src/main/res/layout/item.xml" value="0.1897644927536232" />
       </map>
     </option>
   </component>
