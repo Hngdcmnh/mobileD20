@@ -180,7 +180,7 @@
                 android:layout_marginEnd="15dp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/ticket_name_tv2"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:text="00000001" />
+                android:text="00000001" />
 
             <TextView
                 android:id="@+id/travel_date_tv2"
