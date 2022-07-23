@@ -1,12 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_gravity="center_horizontal"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
 
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#055">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#055"
+                app:defaultQueryHint="Nhập tên vé, số vé, mã tra cứu"
+                app:iconifiedByDefault="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#055"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/sum_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="7dp"
+                android:text="Tổng số lượng vé"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sum_money"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/sum_ticket"
+                app:layout_constraintTop_toBottomOf="@+id/sum_ticket"
+                tools:text="11,000" />
+
+            <TextView
+                android:id="@+id/sum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/sum_ticket"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Tổng tiền" />
+
+            <TextView
+                android:id="@+id/dsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/sum_money"
+                app:layout_constraintEnd_toEndOf="@+id/sum_text"
+                tools:text="14.740.000,00" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/ticket_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="7dp"
+                android:text="Nam Định - Hà Nội"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/number_plate_tv"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/ticket_name_tv"
+                app:layout_constraintTop_toBottomOf="@+id/ticket_name_tv"
+                tools:text="Xe: 29B-0411" />
+
+            <TextView
+                android:id="@+id/seats_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/number_plate_tv"
+                app:layout_constraintEnd_toStartOf="@+id/travel_date_tv"
+                app:layout_constraintStart_toEndOf="@+id/number_plate_tv"
+                tools:text="Ghế: 5" />
+
+            <TextView
+                android:id="@+id/ticket_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/ticket_name_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="00000001" />
+
+            <TextView
+                android:id="@+id/travel_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/number_plate_tv"
+                app:layout_constraintEnd_toEndOf="@+id/ticket_id_tv"
+                tools:text="19/07/2022" />
+
+            <TextView
+                android:id="@+id/ticket_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ticket_id_tv"
+                app:layout_constraintTop_toBottomOf="@+id/travel_date_tv"
+                tools:text="0,00" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/ticket_name_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="7dp"
+                android:text="Hà Nội - Nam Định"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/number_plate_tv2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/ticket_name_tv2"
+                app:layout_constraintTop_toBottomOf="@+id/ticket_name_tv2"
+                tools:text="Xe: 29B-2610" />
+
+            <TextView
+                android:id="@+id/seats_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/number_plate_tv2"
+                app:layout_constraintEnd_toStartOf="@+id/travel_date_tv2"
+                app:layout_constraintStart_toEndOf="@+id/number_plate_tv2"
+                tools:text="Ghế: 7" />
+
+            <TextView
+                android:id="@+id/ticket_id_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/ticket_name_tv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="00000001" />
+
+            <TextView
+                android:id="@+id/travel_date_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/number_plate_tv2"
+                app:layout_constraintEnd_toEndOf="@+id/ticket_id_tv2"
+                tools:text="21/07/2022" />
+
+            <TextView
+                android:id="@+id/ticket_price_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ticket_id_tv2"
+                app:layout_constraintTop_toBottomOf="@+id/travel_date_tv2"
+                tools:text="0,00" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
