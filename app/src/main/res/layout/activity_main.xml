@@ -7,12 +7,117 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tvTestTextView"
+        style="@style/TextViewFont"
+        android:padding="50dp"
         android:text="HDMinh"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/ic_android_black_24dp" />
+
+    <TextView
+        android:id="@+id/tvTestTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HDMinh"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvTestTextView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/ic_android_black_24dp" />
+
+    <Button
+        android:id="@+id/btnTestButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:backgroundTintMode="src_over"
+        android:text="Click me"
+        app:layout_constraintEnd_toStartOf="@+id/btnTestButton1"
+
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestTextView" />
+
+    <Button
+        android:id="@+id/btnTestButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:backgroundTintMode="src_over"
+        android:text="Click me"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintEnd_toStartOf="@+id/btnTestButton2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/btnTestButton"
+        app:layout_constraintTop_toBottomOf="@id/tvTestTextView" />
+
+    <Button
+        android:id="@+id/btnTestButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:backgroundTintMode="src_over"
+        android:text="Click me"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/btnTestButton1"
+        app:layout_constraintTop_toBottomOf="@id/tvTestTextView" />
+
+
+
+    <ImageView
+        android:id="@+id/ivTestImageView"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_android_black_24dp"
+        android:src="@drawable/ic_android_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestButton"
+        />
+    <TextView
+        android:id="@+id/tvTestTextView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_ripple"
+        android:text="ok"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestButton"
+        />
+
+    <TextView
+        android:id="@+id/tvTestTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_layer_list"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="chọn môn học"
+        android:gravity="center|left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestButton"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/etTestEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter something"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTestImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
