@@ -31,6 +31,7 @@
                 android:layout_height="32dp"
                 android:hint="Điền cái gì đó"
                 android:layout_marginLeft="5dp"
+                android:paddingRight="5dp"
                 android:background="@drawable/backgroundtext"/>
         </FrameLayout>
 
