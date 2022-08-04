@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:backgroundTint="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey_900_dark"
         android:text="@string/btnDemo"
         android:textColor="@color/custom_pressed_button" />
 
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnDemo"
         android:layout_centerInParent="true"
-        android:backgroundTint="@color/blue_grey"
+        android:backgroundTint="@color/blue_grey_900_dark"
         android:text="@string/btnGoFood"
         android:textColor="@color/custom_pressed_button" />
 

@@ -6,9 +6,6 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.searchbar.R
-import com.example.searchbar.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
