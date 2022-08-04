@@ -1,11 +1,17 @@
 # mobileD20
 Training D20 Mobile
 
-UI khi chưa nhấn vào button search:
+Màn hình chính có 2 button nhấn vào dẫn tới 2 phần ví dụ:
 
-![image](https://user-images.githubusercontent.com/84552830/180347575-fb1cb886-bf35-4ac2-af54-669807122133.png)
+![image](https://user-images.githubusercontent.com/84552830/182752025-dc9dc510-56e1-41f5-bb4a-777bd404503f.png)
 
-UI khi nhấn vào button search:
-(Do chưa tìm được cách để hiển thị toolbar trên 1 fragmwnt duy nhất nên em đang dùng fragment để làm search bar ạ 🥲 - khi ấn vào nút search sẽ dùng ChildFragmentManager replace fragment của searchbar sang fragment mới, khi nhấn hủy sẽ popstack cái fragment đó để trở về như ban đầu 😬)
+Màn hình demo gồm các CardView có thể mở rộng bằng cách điều chỉnh Visibility buổi trước anh vừa nhận xét bài em:
 
-![image](https://user-images.githubusercontent.com/84552830/180347545-507dc78f-471c-4ab0-b1ef-a33ee185838b.png)
+![image](https://user-images.githubusercontent.com/84552830/182752228-515c8240-b0db-4042-ac9b-842333049b76.png)
+
+
+Màn hình GoFood gồm có các nút đặt hàng sẽ đổi màu về màu xám khi mình chọn đồng thời cập nhật hoá đơn sử dụng Interface để giao tiếp giữa Fragment và Adapter của RecyclerView, các dữ liệu em để random. 
+//Phần LoadMore em đang hơi đét nên có gì em sẽ update sau ạ ;-;, còn phần Loading screen em chưa tìm hiểu ạ
+
+![image](https://user-images.githubusercontent.com/84552830/182752656-4318b574-ce4b-429a-ad6c-ad9fc2f31ff5.png)
+
