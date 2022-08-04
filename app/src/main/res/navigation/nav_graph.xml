@@ -3,29 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/veDaXuatFragment">
-
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/xuatVeFragment"
-        android:name="com.example.searchbar.fragment.XuatVeFragment"
-        android:label="Xuất vé"
-        tools:layout="@layout/fragment_xuat_ve">
-
+        android:id="@+id/demoFragment"
+        android:name="com.example.trainingmobiled20.fragment.demoFragment.DemoFragment"
+        android:label="fragment_demo"
+        tools:layout="@layout/fragment_demo" />
+    <fragment
+        android:id="@+id/goFoodFragment"
+        android:name="com.example.trainingmobiled20.fragment.gofoodFragment.GoFoodFragment"
+        android:label="fragment_go_food"
+        tools:layout="@layout/fragment_go_food" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.trainingmobiled20.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_demoFragment"
+            app:destination="@id/demoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_goFoodFragment"
+            app:destination="@id/goFoodFragment" />
     </fragment>
-
-    <fragment
-        android:id="@+id/quetVeFragment"
-        android:name="com.example.searchbar.fragment.QuetVeFragment"
-        android:label="Quét QR"
-        tools:layout="@layout/fragment_quet_ve" />
-    <fragment
-        android:id="@+id/khacFragment"
-        android:name="com.example.searchbar.fragment.KhacFragment"
-        android:label="Khác"
-        tools:layout="@layout/fragment_khac" />
-    <fragment
-        android:id="@+id/veDaXuatFragment"
-        android:name="com.example.searchbar.fragment.VeDaXuatFragment"
-        android:label="Vé Đã Xuất"
-        tools:layout="@layout/fragment_ve_da_xuat" />
 </navigation>
