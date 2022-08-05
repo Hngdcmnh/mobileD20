@@ -18,29 +18,6 @@ class GoFoodRecyclerViewAdapter(
 ) :
     RecyclerView.Adapter<GoFoodRecyclerViewAdapter.ItemViewHolder>() {
     private lateinit var context: Context
-//    private val VIEW_TYPE_ITEM = 0
-//    private val VIEW_TYPE_LOADING = 1
-//    private var isLoadingAdded: Boolean = false
-
-
-//    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-//        val tvBrand: AppCompatTextView = view.findViewById(R.id.tvBrand)
-//        val tvRating: AppCompatTextView = view.findViewById(R.id.tvRating)
-//        val tvOrderTime: AppCompatTextView = view.findViewById(R.id.tvOderTime)
-//        val tvNote: AppCompatTextView = view.findViewById(R.id.tvNote)
-//        val tvSumMoney: AppCompatTextView = view.findViewById(R.id.tvSumMoney)
-//        val tvNumberDish: AppCompatTextView = view.findViewById(R.id.tvNumberDish)
-//        val tvSavedMoney: AppCompatTextView = view.findViewById(R.id.tvSavedMoney)
-//        val btnOder: AppCompatButton = view.findViewById(R.id.btnOderAgain)
-//    }
-
-
-//    override fun getItemViewType(position: Int): Int {
-//        if (position == listOder.size - 1 && isLoadingAdded) {
-//            return VIEW_TYPE_LOADING
-//        }
-//        return VIEW_TYPE_ITEM
-//    }
 
     interface PressOderButtonListener {
         fun updateBill(priceOfDish: Double, numberDish: Int)
@@ -57,28 +34,11 @@ class GoFoodRecyclerViewAdapter(
         val btnOder: AppCompatButton = view.findViewById(R.id.btnOderAgain)
     }
 
-//    class ProgressBarViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-//        val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
-//    }
-
-
     override fun getItemCount(): Int = listOder.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
 
         context = parent.context
-
-//        return if (viewType == VIEW_TYPE_ITEM) {
-//            val view = LayoutInflater.from(parent.context)
-//                .inflate(R.layout.item_go_food, parent, false)
-//
-//            ItemViewHolder(view)
-//        } else {
-//            val view = LayoutInflater.from(parent.context)
-//                .inflate(R.layout.item_loading, parent, false)
-//
-//            ProgressBarViewHolder(view)
-//        }
 
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_go_food, parent, false)
@@ -87,15 +47,6 @@ class GoFoodRecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-//        when (holder) {
-//            is ItemViewHolder -> {
-//                setContent(holder, position)
-//                setOnclick(holder, position)
-//            }
-//            is ProgressBarViewHolder -> {
-//
-//            }
-//        }
         setContent(holder, position)
         setOnclick(holder, position)
     }

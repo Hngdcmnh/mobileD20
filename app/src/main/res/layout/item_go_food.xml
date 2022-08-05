@@ -126,7 +126,8 @@
         android:background="@drawable/custom_order_button"
         android:enabled="true"
         android:text="@string/btn_oder_again"
-        android:textColor="@color/green_a700_dark"
+        android:textColor="#2E7D32"
         app:layout_constraintBaseline_toBaselineOf="@id/tvSumMoney"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
