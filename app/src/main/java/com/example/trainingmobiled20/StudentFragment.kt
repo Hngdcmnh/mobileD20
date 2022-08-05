@@ -23,7 +23,7 @@ class StudentFragment : Fragment() {
 
     private fun setupData() {
         val students = ArrayList<Student>()
-        for(i in 1..10){
+        for(i in 1..15){
             students.add(Student("Học sinh thứ $i",2000+i))
         }
         binding.rvStudent.adapter = adapter
