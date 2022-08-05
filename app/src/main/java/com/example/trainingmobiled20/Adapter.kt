@@ -3,7 +3,9 @@ package com.example.trainingmobiled20
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class Adapter(private val students: ArrayList<Student>) : RecyclerView.Adapter<Adapter.ViewHolder>() {
@@ -24,8 +26,16 @@ class Adapter(private val students: ArrayList<Student>) : RecyclerView.Adapter<A
         return students.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvName: TextView = itemView.findViewById(R.id.tvName) as TextView
         val tvAge: TextView = itemView.findViewById(R.id.tvAge) as TextView
+        private val button: Button = itemView.findViewById(R.id.btn_detail) as Button
+        init {
+            button.setOnClickListener{
+                Toast.makeText(itemView.context,"${tvName.text} | Demo Function",Toast.LENGTH_LONG).show()
+            }
+        }
+
     }
+
 }
