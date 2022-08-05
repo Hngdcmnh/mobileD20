@@ -10,8 +10,7 @@ Màn hình demo gồm các CardView có thể mở rộng bằng cách điều c
 ![image](https://user-images.githubusercontent.com/84552830/182752228-515c8240-b0db-4042-ac9b-842333049b76.png)
 
 
-Màn hình GoFood gồm có các nút đặt hàng sẽ đổi màu về màu xám khi mình chọn đồng thời cập nhật hoá đơn sử dụng Interface để giao tiếp giữa Fragment và Adapter của RecyclerView, các dữ liệu em để random. 
-//Phần LoadMore em đang hơi đét nên có gì em sẽ update sau ạ ;-;, còn phần Loading screen em chưa tìm hiểu ạ
+Màn hình GoFood gồm có các nút đặt hàng sẽ đổi màu về màu xám khi mình chọn đồng thời cập nhật hoá đơn sử dụng Interface để giao tiếp giữa Fragment và Adapter của RecyclerView, các dữ liệu em để random. Khi kéo xuống sẽ load thêm dữ liệu, em đang để tối đa là 5 lần load thêm.
 
 ![image](https://user-images.githubusercontent.com/84552830/182752656-4318b574-ce4b-429a-ad6c-ad9fc2f31ff5.png)
 
