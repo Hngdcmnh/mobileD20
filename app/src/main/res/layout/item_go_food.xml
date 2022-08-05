@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imvThumbnail"
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRating"
+        android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:background="@drawable/custom_textview"
+        android:drawablePadding="3dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:gravity="center_vertical"
+        android:text="@string/tv_rating"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_round_star_24"
+        app:layout_constraintBottom_toBottomOf="@+id/imvThumbnail"
+        app:layout_constraintEnd_toEndOf="@id/imvThumbnail"
+        app:layout_constraintStart_toStartOf="@+id/imvThumbnail"
+        app:layout_constraintTop_toBottomOf="@id/imvThumbnail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBrand"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawableEnd="@drawable/ic_thumb_up_custom"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/tv_brand"
+        android:textColor="@color/blue_grey_900_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imvThumbnail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOderTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/tv_oder_time"
+        android:textColor="@color/blue_grey_900_dark"
+        app:layout_constraintStart_toEndOf="@+id/imvThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrand" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:breakStrategy="balanced"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/tv_note"
+        android:textColor="@color/blue_grey_900_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imvThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/tvOderTime" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvRating" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSumMoney"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:maxLines="1"
+        android:text="@string/tv_sum_money"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumberDish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_number_dish"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSumMoney" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSavedMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/custom_textview_2"
+        android:text="@string/tv_saved_money"
+        android:textColor="@color/green_a700_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvSumMoney"
+        app:layout_constraintStart_toEndOf="@id/tvSumMoney"
+        app:layout_constraintTop_toTopOf="@id/tvSumMoney" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOderAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_order_button"
+        android:enabled="true"
+        android:text="@string/btn_oder_again"
+        android:textColor="@color/green_a700_dark"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvSumMoney"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
