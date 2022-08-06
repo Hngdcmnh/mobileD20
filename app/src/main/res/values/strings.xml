@@ -1,6 +1,12 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TrainingMobileD20</string>
     <string name="search">Search</string>
     <string name="filter">Filter</string>
     <string name="search_hint">Nhập tên vé, số vé, mã tra cứu</string>
+    <string name="detail">Chi tiết</string>
+    <string name="_1996">1996</string>
+    <string name="student_name1" tools:ignore="Typos">Student Name1</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_1">Demo 1</string>
+    <string name="nullstr">NULL</string>
 </resources>
