@@ -3,8 +3,10 @@ package com.example.trainingmobiled20
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
@@ -93,16 +95,16 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         return namePokemons.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imagePokemon: ImageView
-        var typePokemon: TextView
-        var namePokemon: TextView
-        var speciedPokemon :TextView
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var imagePokemon: ImageView = itemView.findViewById(R.id.imagePokemon)
+        var typePokemon: TextView = itemView.findViewById(R.id.typePokemon)
+        var namePokemon: TextView = itemView.findViewById(R.id.namePokemon)
+        var speciedPokemon :TextView = itemView.findViewById(R.id.speciesPokemon)
+        val button: Button = itemView.findViewById<Button>(R.id.btdetail)
         init {
-            imagePokemon = itemView.findViewById(R.id.imagePokemon)
-            typePokemon = itemView.findViewById(R.id.typePokemon)
-            namePokemon = itemView.findViewById(R.id.namePokemon)
-            speciedPokemon = itemView.findViewById(R.id.speciesPokemon)
+            button.setOnClickListener{
+                Toast.makeText(itemView.context,"Pokemon : ${namePokemon.text} \n Type : ${typePokemon.text}\n Species : ${speciedPokemon.text}",Toast.LENGTH_LONG).show()
+            }
         }
     }
 }
