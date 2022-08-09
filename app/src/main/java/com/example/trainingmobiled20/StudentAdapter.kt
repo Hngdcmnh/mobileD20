@@ -22,7 +22,8 @@ class StudentAdapter(private val onItemClick:(Student,Int)-> Unit):RecyclerView.
             binding.apply {
                 tvNameStudent.text = item.name
                 tvYearStudent.text = item.year.toString()
-                btnStudent.setOnClickListener {
+                btnStudent.setOnClickListener {v->
+                    Toast.makeText(v.context,tvNameStudent.text,Toast.LENGTH_SHORT).show()
                     onTitleClick(item,adapterPosition)
 
                 }

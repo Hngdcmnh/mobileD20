@@ -31,7 +31,7 @@ class StudentFragment : Fragment() {
         adapter.setData(students)
     }
     private fun onTitleClick(student: Student,position:Int){
-        Toast.makeText(context, student.name, Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, student.name, Toast.LENGTH_SHORT).show()
         adapter.notifyItemChanged(position)
     }
 
