@@ -1,25 +1,39 @@
 package com.example.trainingmobiled20
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.trainingmobiled20.data.*
+import com.example.trainingmobiled20.databinding.FragmentPokemonWikiBinding
 
 class PokemonWikiFragment : Fragment(R.layout.fragment_pokemon_wiki) {
+    private lateinit var binding: FragmentPokemonWikiBinding
     private lateinit var pokemons: ArrayList<Pokemon>
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentPokemonWikiBinding.inflate(inflater)
+        return binding.root
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         dataInit()
         val layoutManager = LinearLayoutManager(context)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        val recyclerView = binding.recyclerView
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
-        val adapter= RecyclerAdapter(pokemons)
-        recyclerView.adapter=adapter
+        val adapter = RecyclerAdapter(pokemons)
+        recyclerView.adapter = adapter
     }
-    private fun dataInit(){
+
+    private fun dataInit() {
         pokemons = arrayListOf<Pokemon>()
         pokemons.add(Bulbasaur())
         pokemons.add(Ivysaur())
